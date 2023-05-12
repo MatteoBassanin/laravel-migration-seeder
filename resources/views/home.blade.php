@@ -11,6 +11,11 @@
             <div>{{ $train->train_code }}-</div>
             <div>{{ $train->wagon_number }}-</div>
             <div>{{ $train->on_time }}-</div>
+            @if ($train->on_time == 1)
+                {
+                in orario
+                }
+            @endif
             <div>{{ $train->cancelled }}-</div>
             <div>{{ $train->train_date }}</div>
         </div>
